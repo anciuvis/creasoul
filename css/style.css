@@ -8,6 +8,7 @@
   clear: both;
   display: table;
 }
+
 .container {
   margin: 0 auto;
   text-align: center;
@@ -28,7 +29,7 @@ nav ul {
 }
 
 nav a {
-  display: inline-block;
+  display: block;
   text-decoration: none;
   color: white;
   font-family: 'PT Sans Narrow';
@@ -37,7 +38,7 @@ nav a {
 }
 
 nav ul li {
-  display: inline-block;
+  display: block;
   vertical-align: middle;
   padding: 0 0.2em;
   font-size: 1.3rem;
@@ -55,10 +56,6 @@ aside {
 
 section img {
   width: 100%;
-}
-
-article {
-
 }
 
 h2 {
@@ -80,7 +77,16 @@ section p {
   color: grey;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 568px) {
+  nav ul li {
+    display: inline-block;
+  }
+  nav a {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
   .container {
     max-width: 80%;
   }
